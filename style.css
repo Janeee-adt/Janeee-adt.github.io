@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  .main-components {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+
+  .profile-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: plum;
+    padding: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .text-data {
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .name {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .job {
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  .media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+.card {
+    background-color: rgb(255, 203, 255);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid plum;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: rotate(0deg); 
+}
+.card-body {
+    padding: 15px;
+}
+.card-title, .card-subtitle, .card-text {
+    margin-bottom: 10px;
+}
+.card-link {
+    color: rgb(158, 9, 158);
+    text-decoration: none;
+}
+.card-link:hover {
+    text-decoration: underline; 
+}
+@media (max-width: 576px) {
+    .card {
+        transform: rotate(0deg);
+        margin: 0 auto;
+    }
+    .card-body {
+        padding: 10px;
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-12 {
+    max-width: 100%;
+}
+.col-sm-6 {
+    max-width: 50%;
+}
+.col-md-4 {
+    max-width: 33.33%;
+}
+.p-3 {
+    padding: 1rem;
+}
