@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    overflow-x: hidden;
+  }
+  
+.info-box {
+    background-color: #9a6e53;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .feature-list {
+    color: white;
+    list-style: none;
+    padding-left: 0;
+  }
+  .feature-list li {
+    color: white;
+    padding: 8px 0;
+    border-bottom: 1px solid #aaa;
+  }
+.backlink {
+    color: black;
+    text-decoration: none;
+}
