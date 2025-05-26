@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="parallax.css" />
+	<link rel="icon" href="./img/icon.png">
+	<title>Spaceships</title>
+</head>
+
+<body>
+	<section>
+		<div class="keyart" id="parallax">
+			<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+			<div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
+			<div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
+			<div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
+			<div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+			<div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+			<div class="keyart_layer parallax" id="keyart-6" data-speed="140"></div>
+			<div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+			<div class="keyart_layer" id="keyart-8" data-speed="100"></div>
+			<!--Front image, in sync with scroll, no need to parallax-->
+			<!--Add or Remove layers as needed - check Parallax.css for refrence-->
+		</div>
+	</section>
+
+	<section class="main-content">
+		<div style="min-height: 1500px; background-color: #011C2A">
+			<div class="container p-5 text-white">
+				<h2 class="mb-4">Spaceships and Rockets</h2>
+				<a href="../index.html" class="btn text-white" style="background-color: #2e7aa0;">Home</a>
+				<div class="row" id="container-row">
+				</div>
+				<p class="d-inline-flex gap-1 mt-3">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+						aria-expanded="false" aria-controls="collapseExample">
+						Learn More
+					</a>
+				</p>
+				<div class="collapse" id="collapseExample">
+					<div class="card card-body text-white" style="background-color: #2e7aa0;">
+						Spacecraft are vehicles or machines designed to fly in outer space. They are used for various
+						purposes, such as exploration, communication, and colonization. A rocket is used to carry a
+						spacecraft from Earth’s surface to space, usually to low Earth orbit or beyond, and is sometimes
+						called a launch vehicle.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		var titles = ["International Space Station", "Commercial Space Stations", "Space Launch System", "Orion Spacecraft", "Commercial Cargo", "Human Landing Systems"];
+		var pictures = ["img1.jpg", "img2.png", "img3.jpg", "img4.jpg", "img5.avif", "img6.jpg"];
+		var rowElement = document.getElementById("container-row");
+		for (var i = 0; i < titles.length; i++) {
+			rowElement.innerHTML += '<div class="col-6 col-sm-6 col-md-4 col-lg-3">' + '<div class="card my-3 shadow rounded-5 overflow-hidden" style="background-color: #2e7aa0;">' + '<img src="./img/' + pictures[i] + '" class="card-img-top" alt="">' + '<div class="card-body">' + '<h5 class="card-title">' + titles[i] + '</h2>' + '<p class="card-text">'
+			'</div>' + '</div>' + '</div>';
+		}
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+
+</body>
+
+</html>
